@@ -1,7 +1,6 @@
 let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 function dataHandling(input) {
-
   // Membuat console yang pertama, yaitu menambahkan beberapa index array baru ke dalam array input
   input.splice(
     1,
