@@ -1,13 +1,12 @@
 function angkaPalindrome(num) {
-  if (num < 10) {
-    return num + 1;
-  } else {
-    let angkaConvert = num.toString();
+  num++;
+  for (let i = 0; i < 100; i++) {
     let angkaDibalik = "";
-    for (let i = angkaConvert.length - 1; i >= 0; i--) {
-      angkaDibalik += angkaConvert[i];
+    let angkaConvert = num.toString();
+    for (let j = angkaConvert.length - 1; j >= 0; j--) {
+      angkaDibalik = angkaDibalik + angkaConvert[j];
       if (angkaDibalik === angkaConvert) {
-        return angkaDibalik;
+        return num;
       }
     }
     num++;
